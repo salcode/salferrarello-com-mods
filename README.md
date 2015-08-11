@@ -10,4 +10,5 @@ CHANGELOG
 ---------
 
 ### [1.0.0] - 2015-08-11
+- Add composer.json
 - Load custom favicon
