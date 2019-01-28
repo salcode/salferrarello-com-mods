@@ -8,6 +8,9 @@ in this plugin.
 
 CHANGELOG
 ---------
+### [1.1.0] - 2019-01-28
+- Modify Genesis post info: use last modified date
+- Modify Genesis post info: remove "Leave a comment"
 
 ### [1.0.0] - 2015-08-11
 - Add composer.json
