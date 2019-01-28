@@ -51,3 +51,21 @@ function sf_exclude_draft_category( $query ) {
 	}
 	return $query;
 }
+
+// filter post_info to use 'Last updated' date.
+add_filter( 'genesis_post_info', 'sf_genesis_post_info_add_last_mod' );
+/**
+ * Change Genesis Post Info:
+ * - date to last modified date
+ * - remove "Leave a comment"
+ *
+ * @since 1.0.0
+ *
+ * @param  string $post_info string (with shortcodes) for post info.
+ * @return string Genesis default post info with modified instead of publish date
+ */
+function sf_genesis_post_info_add_last_mod( $post_info ) {
+	$post_info =
+		__( 'Last updated on', 'genesis-last-modified-post-info' ) . ' [post_modified_date] by [post_author_posts_link] [post_edit]';
+	return $post_info;
+}
