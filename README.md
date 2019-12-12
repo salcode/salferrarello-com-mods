@@ -8,6 +8,10 @@ in this plugin.
 
 CHANGELOG
 ---------
+### [1.2.0] - 2019-12-12
+- Add fundraiser donation request to before loop
+- Move "Draft" notice to bottom of article
+
 ### [1.1.0] - 2019-01-28
 - Modify Genesis post info: use last modified date
 - Modify Genesis post info: remove "Leave a comment"
