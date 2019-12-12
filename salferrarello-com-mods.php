@@ -18,7 +18,7 @@ function sf_genesis_pre_load_favicon( $favicon_url ) {
 /**
  * Add a warning alert on Draft posts.
  */
-add_action( 'genesis_entry_header', 'sf_genesis_draft_notice' );
+add_action( 'genesis_entry_footer', 'sf_genesis_draft_notice' );
 function sf_genesis_draft_notice() {
 	global $post;
 	if ( ! in_category( 'draft', $post ) ) {
@@ -26,7 +26,6 @@ function sf_genesis_draft_notice() {
 		return;
 	}
 ?>
-<br />
 <div class="alert alert-warning" role="alert">
 	<strong>Warning!</strong>
 	This is a draft, not a finalized post. See <a href="https://salferrarello.com/draft-blog-posts/">full draft disclosure</a>.
