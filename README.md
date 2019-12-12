@@ -8,6 +8,9 @@ in this plugin.
 
 CHANGELOG
 ---------
+### [1.2.1] - 2019-12-12
+- Modify fundraiser donation message to include suggested $5 amount.
+
 ### [1.2.0] - 2019-12-12
 - Add fundraiser donation request to before loop
 - Move "Draft" notice to bottom of article

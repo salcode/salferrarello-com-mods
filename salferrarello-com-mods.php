@@ -3,7 +3,7 @@
  * Plugin Name: salferrarello.com modifications
  * Plugin URI: http://salferrarello.com/
  * Description: Since I'm using the default Bootstrap Genesis Theme, I'm putting my customizations in this plugin
- * Version: 1.2.0
+ * Version: 1.2.1
  * Author: Sal Ferrarello
  * Author URI: http://salferrarello.com/
  */
@@ -24,8 +24,7 @@ function sf_genesis_fundraiser() {
 	I don't need anything in return.</p>
 	<p>I am currently helping raise money to support combat wounded, critically
 	ill, and injured members of all branches of the U.S. Armed Forces.</p>
-	<p>If you found this content useful, I hope you'll consider supporting them
-	too.</p>
+	<p>If you found this content useful, I hope you'll consider donating $5.</p>
 
 	<p><a href="https://www.mightycause.com/story/Salcode-Support-Vets">Support
 	veterans of the U.S. Armed Forces</a></p>
