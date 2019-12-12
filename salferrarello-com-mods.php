@@ -15,6 +15,24 @@ function sf_genesis_pre_load_favicon( $favicon_url ) {
     return $plugin_dir_path . 'images/favicon.ico';
 }
 
+add_action( 'genesis_before_loop', 'sf_genesis_fundraiser', 15 );
+function sf_genesis_fundraiser() {
+?>
+<div class="alert alert-primary" role="alert">
+	<strong><a href="https://www.mightycause.com/story/Salcode-Support-Vets">Please Consider Donating</a></strong>
+	<p>I don't make any money from this blog, I enjoying sharing this content and
+	I don't need anything in return.</p>
+	<p>I am currently helping raise money to support combat wounded, critically
+	ill, and injured members of all branches of the U.S. Armed Forces.</p>
+	<p>If you found this content useful, I hope you'll consider supporting them
+	too.</p>
+
+	<p><a href="https://www.mightycause.com/story/Salcode-Support-Vets">Support
+	veterans of the U.S. Armed Forces</a></p>
+</div>
+<?php
+}
+
 /**
  * Add a warning alert on Draft posts.
  */
