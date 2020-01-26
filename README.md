@@ -10,6 +10,7 @@ CHANGELOG
 ---------
 ### [unreleased]
 - Disable Genesis fallback for featured image
+- Return "Draft" category posts back to home page (this reverts the change introduced in `v1.0.0`)
 
 ### [1.2.2] - 2020-01-01
 - Remove fundraise donation message

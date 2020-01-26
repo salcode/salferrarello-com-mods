@@ -33,24 +33,6 @@ function sf_genesis_draft_notice() {
 <?php
 }
 
-/**
- * Exclude Draft posts from the blog page (which is also my homepage).
- */
-add_filter( 'pre_get_posts', 'sf_exclude_draft_category' );
-function sf_exclude_draft_category( $query ) {
-	if ( $query->is_home ) {
-		$query->set( 'tax_query', [
-			[
-				'taxonomy' => 'category',
-				'field'    => 'slug',
-				'terms'    => 'draft',
-				'operator' => 'NOT IN',
-			],
-		] );
-	}
-	return $query;
-}
-
 // filter post_info to use 'Last updated' date.
 add_filter( 'genesis_post_info', 'sf_genesis_post_info_add_last_mod' );
 /**
