@@ -19,6 +19,11 @@ CHANGELOG
 - Modify Genesis post info: use last modified date
 - Modify Genesis post info: remove "Leave a comment"
 
-### [1.0.0] - 2015-08-11
+### [1.0.0] - 2018-04-26
 - Add composer.json
 - Load custom favicon
+- Add Warning alert to "Draft" category posts
+- Exclude "Draft" category posts from homepage
+
+### [0.1.0] - 2015-08-11
+- Initial release
