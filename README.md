@@ -8,6 +8,9 @@ in this plugin.
 
 CHANGELOG
 ---------
+### [1.2.2] - 2020-01-01
+- Remove fundraise donation message
+
 ### [1.2.1] - 2019-12-12
 - Modify fundraiser donation message to include suggested $5 amount.
 
