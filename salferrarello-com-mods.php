@@ -68,3 +68,12 @@ function sf_genesis_post_info_add_last_mod( $post_info ) {
 		__( 'Last updated on', 'genesis-last-modified-post-info' ) . ' [post_modified_date] by [post_author_posts_link] [post_edit]';
 	return $post_info;
 }
+
+/**
+ * Disable fallback images (specifically on archive pages).
+ */
+add_filter( 'genesis_get_image_default_args', 'sf_genesis_disable_image_fallback' );
+function sf_genesis_disable_image_fallback( $args ) {
+	$args['fallback'] = false;
+	return $args;
+}

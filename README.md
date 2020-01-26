@@ -8,6 +8,9 @@ in this plugin.
 
 CHANGELOG
 ---------
+### [unreleased]
+- Disable Genesis fallback for featured image
+
 ### [1.2.2] - 2020-01-01
 - Remove fundraise donation message
 
