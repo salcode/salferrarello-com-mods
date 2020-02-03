@@ -61,3 +61,35 @@ function sf_genesis_disable_image_fallback( $args ) {
 	$args['fallback'] = false;
 	return $args;
 }
+
+add_action( 'the_content', __NAMESPACE__ . '\sf_add_my_bio' );
+function sf_add_my_bio($content) {
+	return $content . get_bio();
+}
+
+function get_bio() {
+	if ( ! is_single() ) {
+		return $content;
+	}
+	$name_markup = esc_html( get_the_author() );
+	$twitter_handle = get_the_author_meta( 'twitter' );
+	if ( $twitter_handle ) {
+		$name_markup .= sprintf(
+			' <small>(<a href="https://twitter.com/%s">@%s</a>)</small>',
+			$twitter_handle,
+			$twitter_handle
+		);
+	}
+	return sprintf(
+		'<div class="media border p-3 bg-light">%s<div class="media-body"><h5 class="mt-0">%s</h5>%s</div></div>',
+		get_avatar(
+			get_the_author_meta( 'ID' ),
+			96,
+			'',
+			get_the_author(),
+			[ 'class' => 'mr-3 shadow rounded-circle' ]
+		),
+		$name_markup,
+		esc_html( get_the_author_meta( 'description' ) )
+	);
+}
