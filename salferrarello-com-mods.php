@@ -8,8 +8,10 @@
  * Author URI: http://salferrarello.com/
  */
 
+namespace salcode\salferrarelloComMods;
+
  // Loads my favicon from this plugin
-add_filter( 'genesis_pre_load_favicon', 'sf_genesis_pre_load_favicon' );
+add_filter( 'genesis_pre_load_favicon', __NAMESPACE__ . '\sf_genesis_pre_load_favicon' );
 function sf_genesis_pre_load_favicon( $favicon_url ) {
 	$plugin_dir_path = plugin_dir_url(__FILE__);
     return $plugin_dir_path . 'images/favicon.ico';
@@ -18,7 +20,7 @@ function sf_genesis_pre_load_favicon( $favicon_url ) {
 /**
  * Add a warning alert on Draft posts.
  */
-add_action( 'genesis_entry_footer', 'sf_genesis_draft_notice' );
+add_action( 'genesis_entry_footer', __NAMESPACE__ . '\sf_genesis_draft_notice' );
 function sf_genesis_draft_notice() {
 	global $post;
 	if ( ! in_category( 'draft', $post ) ) {
@@ -34,7 +36,7 @@ function sf_genesis_draft_notice() {
 }
 
 // filter post_info to use 'Last updated' date.
-add_filter( 'genesis_post_info', 'sf_genesis_post_info_add_last_mod' );
+add_filter( 'genesis_post_info', __NAMESPACE__ . '\sf_genesis_post_info_add_last_mod' );
 /**
  * Change Genesis Post Info:
  * - date to last modified date
@@ -54,7 +56,7 @@ function sf_genesis_post_info_add_last_mod( $post_info ) {
 /**
  * Disable fallback images (specifically on archive pages).
  */
-add_filter( 'genesis_get_image_default_args', 'sf_genesis_disable_image_fallback' );
+add_filter( 'genesis_get_image_default_args', __NAMESPACE__ . '\sf_genesis_disable_image_fallback' );
 function sf_genesis_disable_image_fallback( $args ) {
 	$args['fallback'] = false;
 	return $args;
