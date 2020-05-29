@@ -90,6 +90,6 @@ function get_bio() {
 			[ 'class' => 'mr-3 shadow rounded-circle' ]
 		),
 		$name_markup,
-		esc_html( get_the_author_meta( 'description' ) )
+		wp_kses_post( get_the_author_meta( 'description' ) )
 	);
 }
