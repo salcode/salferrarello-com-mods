@@ -3,7 +3,7 @@
  * Plugin Name: salferrarello.com modifications
  * Plugin URI: http://salferrarello.com/
  * Description: Since I'm using the default Bootstrap Genesis Theme, I'm putting my customizations in this plugin
- * Version: 1.3.0
+ * Version: 1.4.0
  * Author: Sal Ferrarello
  * Author URI: http://salferrarello.com/
  */

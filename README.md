@@ -8,7 +8,7 @@ in this plugin.
 
 CHANGELOG
 ---------
-### unreleased
+### [1.4.0] - 2020-05-29
 - Add namespace `salcode\salferrarelloComMods`
 - Add Author Box
 
