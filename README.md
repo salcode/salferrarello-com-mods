@@ -10,6 +10,7 @@ CHANGELOG
 ---------
 ### unreleased
 - Add namespace `salcode\salferrarelloComMods`
+- Add Author Box
 
 ### [1.3.0] - 2020-01-27
 - Disable Genesis fallback for featured image
