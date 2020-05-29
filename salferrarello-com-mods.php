@@ -84,10 +84,10 @@ function get_bio() {
 		'<div class="media border p-3 bg-light">%s<div class="media-body"><h5 class="mt-0">%s</h5>%s</div></div>',
 		get_avatar(
 			get_the_author_meta( 'ID' ),
-			96,
+			128,
 			'',
 			get_the_author(),
-			[ 'class' => 'mr-3 shadow rounded-circle' ]
+			[ 'class' => 'mr-4 shadow rounded-circle' ]
 		),
 		$name_markup,
 		wp_kses_post( get_the_author_meta( 'description' ) )
