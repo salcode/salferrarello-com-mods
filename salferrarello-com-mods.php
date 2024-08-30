@@ -69,7 +69,7 @@ function sf_add_my_bio($content) {
 
 function get_bio() {
 	if ( ! is_single() ) {
-		return $content;
+		return '';
 	}
 	$name_markup = esc_html( get_the_author() );
 	$twitter_handle = get_the_author_meta( 'twitter' );

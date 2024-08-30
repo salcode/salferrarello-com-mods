@@ -8,6 +8,9 @@ in this plugin.
 
 CHANGELOG
 ---------
+### Unreleased
+- Fix "Undefined variable $content" warning ([#12](https://github.com/salcode/salferrarello-com-mods/issues/12))
+
 ### [1.4.0] - 2020-05-29
 - Add namespace `salcode\salferrarelloComMods`
 - Add Author Box
